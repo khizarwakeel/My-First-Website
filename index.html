@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saylani Welfare Int Trust</title>
+    <link rel="shortcut icon" href="./Saylani Website Content/saylanifavicon.ico" type="image/x-icon">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        #infocall {
+            background-color: rgb(238, 236, 236);
+            height: 32px;
+            width: 96%;
+            padding-left: 90px;
+            position: relative;
+            top: -16px;
+            left: -12px;
+            font-style: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 90%;
+            color: rgb(78, 77, 77);
+        }
+
+        .inlineli {
+            display: inline;
+            padding: 20px;
+        }
+
+        ul {
+            padding-top: 5px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(78, 77, 77);
+
+        }
+
+        .mail {
+            height: 18px;
+            width: 18px;
+            position: absolute;
+            top: 7px;
+            left: 120px;
+        }
+
+        .phone {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 9px;
+            left: 325px;
+        }
+
+        .engurdu {
+            background-color: white;
+            position: absolute;
+            top: -10px;
+            left: 1150px;
+            width: 80px;
+            padding: 1px;
+            text-align: center;
+            height: 40px;
+            font-size: 100%;
+        }
+
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .engurdu:hover {
+            background-color: rgb(240, 236, 236);
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 3;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            cursor: pointer;
+        }
+
+        .bc:hover {
+            background-color: rgb(233, 230, 230);
+            height: 15px;
+            padding: 10px;
+            padding-top: 2px;
+        }
+
+        .navbar {
+            border-bottom: 1px solid rgb(216, 215, 215);
+            width: 93.5%;
+            height: 80px;
+            padding-left: 110px;
+            position: sticky;
+            left: -30px;
+            top: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #ffffff;
+            z-index: 2;
+        }
+
+        .saylanilogo {
+            height: 50px;
+            position: relative;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        .list {
+            position: relative;
+            left: 160px;
+            top: -45px;
+            margin-right: 60px;
+            color: grey;
+            cursor: pointer;
+        }
+
+        #dn {
+            border: 1px solid royalblue;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: royalblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .fc {
+            color: royalblue;
+        }
+
+        #fc1 {
+            color: #8dc63f;
+        }
+
+        .fc:hover {
+            border-bottom: 2px solid rgb(7, 199, 7);
+        }
+
+        .text {
+            width: 500px;
+            float: left;
+            color: rgb(150, 147, 147);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 110px;
+            font-size: 105%;
+            position: relative;
+            top: -90px;
+            clear: both;
+        }
+
+        .rm {
+            border: 1px solid rgb(56, 33, 33);
+            width: 100px;
+            border-radius: 5px;
+            padding-left: 30px;
+            padding-right: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: rgb(141, 140, 140);
+        }
+
+        .arow {
+            position: relative;
+            top: 4px;
+            left: 10px;
+        }
+
+        .donation {
+
+            width: 1190px;
+            height: 200px;
+            margin: auto;
+            border-radius: 10px;
+            font-size: 90%;
+            background-color: #f3f7f4;
+        }
+
+        .flt1 {
+            position: relative;
+            top: 35px;
+            left: -620px;
+            margin: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 250%;
+            color: #8dc63f;
+        }
+
+        .flt2 {
+            position: relative;
+            top: 25px;
+            left: 35px;
+            font-size: 120%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: royalblue;
+        }
+
+        .flt3 {
+            background-color: rgba(0, 0, 0, .85);
+            color: white;
+            border: 1px solid rgba(0, 0, 0, .85);
+            width: 220px;
+            font-size: 110%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            top: -58px;
+            left: 310px;
+            cursor: pointer;
+        }
+
+        .flt4 {
+            background-color: white;
+            color: rgba(0, 0, 0, .85);
+            border: 1px solid white;
+            width: 90px;
+            font-size: 110%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            left: 570px;
+            top: -120px;
+            cursor: pointer;
+        }
+
+        .flt5 {
+            background-color: white;
+            color: rgba(0, 0, 0, .85);
+            border: 1px solid white;
+            width: 200px;
+            font-size: 120%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            left: 701px;
+            top: -182px;
+            cursor: pointer;
+        }
+
+        .flt6 {
+            background-color: white;
+            color: rgba(0, 0, 0, .85);
+            border: 1px solid white;
+            width: 40px;
+            font-size: 120%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            left: 942px;
+            top: -249px;
+            cursor: pointer;
+        }
+
+        .flt7 {
+            background-color: #8dc63f;
+            color: white;
+            border: 1px solid #8dc63f;
+            width: 100px;
+            font-size: 120%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            left: 1024px;
+            top: -315px;
+            cursor: pointer;
+        }
+
+        .mainimage {
+            margin-left: 70px;
+            width: 1190px;
+            height: 600px;
+        }
+
+        .wwd {
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .images {
+            background-color: rgb(231, 229, 229);
+            padding: 50px;
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            margin: 15px;
+        }
+
+        .ml {
+            margin-left: 55px;
+        }
+
+        .wf {
+            position: relative;
+            top: -75px;
+            left: 127px;
+        }
+
+        .mc {
+            position: relative;
+            top: -115px;
+            left: 330px;
+        }
+
+        .os {
+            position: relative;
+            top: -155px;
+            left: 510px;
+        }
+
+        .rp {
+            position: relative;
+            top: -196px;
+            left: 735px;
+        }
+
+        .ed {
+            position: relative;
+            top: -235.9px;
+            left: 936.5px;
+        }
+
+        .fd {
+            position: relative;
+            top: -276px;
+            left: 1158.5px;
+        }
+
+        .donateimg {
+            width: 380px;
+            border-radius: 10px;
+            height: 300px;
+            margin: 10px;
+            opacity: 0.4;
+        }
+
+        .msd {
+            margin-left: 60px;
+            position: relative;
+            top: -250px;
+        }
+
+        .donatebox {
+            width: 350px;
+            height: 40px;
+            background-color: #8dc63f;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .dona {
+            color: white;
+            position: relative;
+            top: -50px;
+            left: 150px;
+        }
+
+        .floodcontent {
+            position: relative;
+            top: -393.9px;
+            left: 85px;
+        }
+
+        .itcontent {
+            position: relative;
+            top: -534px;
+            left: 490px;
+        }
+
+        .coldcontent {
+            position: relative;
+            top: -673px;
+            left: 893px;
+        }
+
+        .bordersay {
+            background-color: royalblue;
+            overflow: auto;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            height: 200px;
+            position: relative;
+            top: -400px;
+            color: white;
+            padding-top: 40px;
+        }
+
+        .inputfield {
+            width: 400px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            outline: none;
+            color: white;
+        }
+
+        .inputfield::placeholder {
+            color: white;
+        }
+
+        .subscribe {
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .posiinput {
+            position: relative;
+            top: -250px;
+        }
+
+        .footer {
+            background-color: grey;
+            height: 500px;
+            margin-top: -600px;
+        }
+
+        .sayposition {
+            position: relative;
+            top: 55px;
+            left: -20px;
+        }
+
+        .sociallogo {
+            position: relative;
+            top: 70px;
+            left: 120px;
+            cursor: pointer;
+        }
+
+        .listitem1 {
+            position: relative;
+            top: -120px;
+            left: 500px;
+            list-style: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .listitem2 {
+            position: relative;
+            top: -330px;
+            left: 720px;
+            list-style: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .listitem3 {
+            position: relative;
+            top: -540px;
+            left: 900px;
+            list-style: none;
+            color: white;
+        }
+
+        .listitemfo {
+            margin-bottom: 20px;
+        }
+
+        .imgposacca {
+            position: relative;
+            top: 290px;
+            left: 600px;
+        }
+
+        .accaportion {
+            border-top: 1px solid white;
+            position: relative;
+            top: -470px;
+            width: 80%;
+            margin: auto;
+            border-bottom: 1px solid white;
+            height: 122px;
+        }
+
+        .copyright {
+            position: relative;
+            top: -440px;
+            left: 511px;
+            list-style: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="infocall">
+        <p>
+        <ul>
+            <li class="inlineli"><a href="mailto:info@saylaniwelfare.com">info@saylaniwelfare.com</a></li>
+            <li class="inlineli">021-111-729-526</li>
+        </ul>
+        </p>
+
+        <img class="mail" src="./Saylani Website Content/emailicon.png" alt="">
+        <img class="phone" src="./Saylani Website Content/phoneicon.png" alt="">
+        <div class="engurdu">
+            <div class="dropdown">
+                <p>English</p>
+                <div class="dropdown-content">
+                    <p class="bc">English</p>
+                    <p class="bc">اردو</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <img class="saylanilogo" src="./Saylani Website Content/saylanilogo.png" alt="">
+        <ul class="list">
+            <li class="inlineli"><a class="fc" href="https://www.saylaniwelfare.com" target="_blank">Home</a></li>
+            <li class="inlineli">About</li>
+            <li class="inlineli">Services</li>
+            <li class="inlineli">Media</li>
+            <li class="inlineli">News</li>
+            <li class="inlineli">Contact Us</li>
+            <li class="inlineli"> Bank Details</li>
+            <li class="inlineli" id="fc1">Overseas Donors</li>
+            <li class="inlineli" id="dn">Donate Now</li>
+        </ul>
+    </div>
+    <div class="ip">
+        <div class="text">
+            <h1>Donate us to support<br />
+                <span style="color: #8dc63f;">flood-affected</span> families in <br />Pakistan
+                <h1>We are distributing <span style=" color: royalblue;"> Shelter Kit</span>
+                </h1>
+                <p style="font-size: 120%;">
+                    Saylani Welfare is on the ground and already working with local communities to assess how best to
+                    support affected families, who urgently need food, Ration, shelter, bedding, Medical Facility and
+                    hygiene items.
+                </p><br />
+                <p class="rm">
+                    Read More
+                    <img class="arow" src="./Saylani Website Content/Arrowicon.png" alt="">
+                </p>
+        </div>
+        <img width="520px" src="./Saylani Website Content/saylaniimage.png" alt="">
+    </div>
+    <br /><br />
+    <div class="donation">
+        <h1 class="flt1">Help Us to make <br />lives better</h1>
+        <h1 class="flt2">Quick Donation</h1>
+        <h1 class="flt3">Electricity bill support fund</h1>
+        <h1 class="flt4">Flood Relief</h1>
+        <h1 class="flt5">Help the needy in winter</h1>
+        <h2 class="flt6">Food</h2>
+        <h2 class="flt7">Donate</h2>
+    </div>
+    <br /><br />
+    <div>
+        <img class="mainimage" src="./Saylani Website Content/Main Image.jpg" alt="Donation Saylani">
+
+    </div>
+    <br />
+    <div class="wwd">
+        <h1>What we are Doing</h1>
+    </div>
+    <br />
+    <div class="ml">
+        <img class="images" src="./Saylani Website Content/1pic.png" alt="Welfare">
+        <img class="images" src="./Saylani Website Content/2pic.png" alt="Medical">
+        <img class="images" src="./Saylani Website Content/3pic.png" alt="Online Sadqah">
+        <img class="images" src="./Saylani Website Content/4pic.png" alt="RO Plant">
+        <img class="images" src="./Saylani Website Content/5pic.png" alt="Education">
+        <img class="images" src="./Saylani Website Content/6pic.png" alt="Food">
+    </div>
+    <div>
+        <h4 class="wf">Welfare</h4>
+        <h4 class="mc">Medical</h4>
+        <h4 class="os">Online Sadqah</h4>
+        <h4 class="rp">RO Plant</h4>
+        <h4 class="ed">Education</h4>
+        <h4 class="fd">Food</h4>
+    </div>
+    <div class="marginset">
+        <div class="msd">
+            <img class="donateimg" src="./Saylani Website Content/Flood.jpg" alt="Flood">
+            <img class="donateimg" src="./Saylani Website Content/IT.jpg" alt="IT">
+            <img class="donateimg" src="./Saylani Website Content/cold.jpg" alt="Cold">
+        </div>
+        <div class="floodcontent">
+            <h4>Food Distribution for flood affectees in<br />Interior Sindh & Baluchistan</h4>
+            <div class="donatebox"></div>
+            <h4 class="dona">Donate</h4>
+        </div>
+        <div class="itcontent">
+            <h4>IT Entrepreneurship Courses</h4>
+            <div class="donatebox"></div>
+            <h4 class="dona">Donate</h4>
+        </div>
+        <div class="coldcontent">
+            <h4>Help the needy in winter</h4>
+            <div class="donatebox"></div>
+            <h4 class="dona">Donate</h4>
+        </div>
+    </div>
+    <div class="posiinput">
+        <div class="bordersay">
+            <h1>Saylani Guide</h1>
+            <form method="get" action="https//:www.example.com">
+                <input class="inputfield" type="search" placeholder="Enter E-mail Address" required /> <input
+                    class="subscribe" type="submit" value="Subscribe" />
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="imgposacca" width="120px" src="./Saylani Website Content/accalogo.png" alt="">
+        <img class="sayposition" width="350px" src="./Saylani Website Content/saylanilogo.png" alt="">
+        <div class="sociallogo">
+            <img width="50px" src="./Saylani Website Content/instalogo.png" alt="">
+            <img width="50px" src="./Saylani Website Content/twiiterlogo.png" alt="">
+            <img width="50px" src="./Saylani Website Content/Facebooklogo.png" alt="">
+        </div>
+        <div class="listitem1">
+            <h1>About</h1>
+            <li class="listitemfo">Introduction</li>
+            <li class="listitemfo">Chairman Message</li>
+            <li class="listitemfo">Annual Report</li>
+            <li class="listitemfo">Bank Details</li>
+        </div>
+        <div class="listitem2">
+            <h1>Explore</h1>
+            <li class="listitemfo">News</li>
+            <li class="listitemfo">Media</li>
+            <li class="listitemfo">Contact</li>
+            <li class="listitemfo">Donation</li>
+        </div>
+        <div class="listitem3">
+            <h1>Contact</h1>
+            <li>A-25, Bahadurabad Chowrangi Karachi, Pakistan</li>
+            <li>UAN: 111-729-526 (+0092-213)4130786-90</li>
+            <li>CELL: 92-311-1729526</li>
+            <li>USA NO +1(716)941 7792</li>
+            <li>UK NO (+44)115 970 6256</li>
+        </div>
+        <div class="accaportion">
+        </div>
+        <li class="copyright">Copyright &#169; 2023 by Saylani Welfare Int Trust</li>
+    </div>
+</body>
+
+</html>
